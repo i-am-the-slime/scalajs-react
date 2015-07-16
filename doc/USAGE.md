@@ -113,7 +113,7 @@ There are two ways of wiring up events to vdom.
   ```scala
   val loggedInUser: Option[User] = ???
 
-  ^.div(
+  <.div(
     <.h3("Welcome"),
     loggedInUser.map(user =>
       <.a(
@@ -124,7 +124,7 @@ There are two ways of wiring up events to vdom.
 * `EmptyTag` - A virtual DOM building block representing nothing.
 
   ```scala
-  ^.div(if (allowEdit) editButton else EmptyTag)
+  <.div(if (allowEdit) editButton else EmptyTag)
   ```
 
 #### Custom markup elements
